@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/sp0"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rompe Cocos"
+        android:textSize="30dp"
+        android:layout_below="@+id/sp0"
+        android:id="@+id/tvTitle"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:hint="Ingrese un su Nombre"
+        android:textSize="20dp" />
+
+    <Space
+        android:id="@+id/sp2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/etNombre"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF9800"
+        android:text="Iniciar Juego"
+        android:width="30dp"
+        android:id="@+id/btIniciar"
+        android:layout_below="@+id/etNombre"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:onClick="ocIniciar"
+        />
+
+    <ImageView
+        android:id="@+id/imgPuzzle"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+        android:layout_below="@+id/btIniciar"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/slider_puzzle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgPuzzle"
+        android:id="@+id/tvUCB"
+        android:text="U.C.B."
+        android:textSize="30dp"
+        android:textColor="#FFEB3B"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvUCB"
+        android:id="@+id/tvFecha"
+        android:text="2020"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvFecha"
+        android:id="@+id/tvPuntaje"
+        android:textSize="30dp"
+        android:textColor="#3F51B5"
+        android:background="#DDACACAC"
+        />
+
+</RelativeLayout>
